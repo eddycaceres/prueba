@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <uses-feature
         android:name="android.hardware.Camera"
         android:required="true" />
@@ -95,7 +98,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.aplicacion.pm01sqlite.fileprovider"
+            android:authorities="com.example.prueba2.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
